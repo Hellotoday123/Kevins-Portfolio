@@ -617,6 +617,13 @@ strong {
   margin: 6px;
 }
 
+.skill-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
 
 
 /*---------------------------------------
@@ -636,7 +643,7 @@ strong {
   position: relative;
   overflow: hidden;
   margin-bottom: 24px;
-  padding: 40px 40px 240px 40px;
+  padding: 40px 40px 80px 40px;
   transition: all 0.5s;
 }
 
