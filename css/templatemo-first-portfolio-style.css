@@ -645,6 +645,7 @@ strong {
   margin-bottom: 24px;
   padding: 40px 40px 80px 40px;
   transition: all 0.5s;
+  
 }
 
 .projects-thumb-up {
@@ -724,6 +725,15 @@ strong {
   border-radius: 8px;
 }
 
+.see-more-wrapper { display: block; }
+.see-more-wrapper .btn { position: relative; z-index: 0; }
+
+.when-expanded { display: none; }
+#seeMoreBtn[aria-expanded="true"] .when-expanded { display: inline; }
+#seeMoreBtn[aria-expanded="true"] .when-collapsed { display: none; }
+
+.see-more-row { position: relative; z-index: 3; }
+.projects-thumb { position: relative; z-index: 1; }
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
@@ -1110,4 +1120,13 @@ strong {
   }
 
 }
+
+<style>
+  /* Default: show "see more", hide "see less" */
+  #seeMoreBtn .when-expanded { display: none; }
+
+  /* When the collapse is open, Bootstrap sets aria-expanded="true" on the button */
+  #seeMoreBtn[aria-expanded="true"] .when-expanded { display: inline; }
+  #seeMoreBtn[aria-expanded="true"] .when-collapsed { display: none; }
+</style>
 
